@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tour
+spec:
+  selector:
+    matchLabels:
+      app: tour
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tour
+    spec:
+      containers:
+      - name: tour
+        image: linjinbao66/tour:0.0.1
+        ports:
+        - containerPort: 3999
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tour
+spec:
+  selector:
+    app: tour
+  ports:
+    - protocol: TCP
+      port: 3999
+      targetPort: 3999
+

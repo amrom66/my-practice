@@ -1,0 +1,10 @@
+USER-SUPPLIED VALUES:
+USER-SUPPLIED VALUES: null
+certmanager-issuer:
+  email: 15776654308@qq.com
+gitlab:
+  migrations:
+    enabled: true
+global:
+  hosts:
+    domain: linjb.com

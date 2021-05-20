@@ -1,0 +1,53 @@
+stages:
+  - docker-build
+  - test
+  - k8s-deploy
+
+test:
+  stage: test
+  script:
+    - sleep 3
+    - echo "We did it! Something else runs in parallel!"
+
+docker-build:
+  # Official docker image.
+  image: docker:19.03.12
+  stage: docker-build
+  services:
+   - name: docker:19.03.12-dind
+     command: [ "--insecure-registry=10.20.250.21" ]
+  variables:
+    # Tell docker CLI how to talk to Docker daemon; see
+    # https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#use-docker-in-docker-executor
+    DOCKER_HOST: tcp://docker:2375
+    # Use the overlayfs driver for improved performance:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+    
+  before_script:
+    - docker info
+    - docker login -u "${CI_REGISTRY_USER}" -p "${CI_REGISTRY_PASSWORD}" 10.20.250.21
+  script:
+    -  docker build -t "${CI_REGISTRY_IMAGE}:latest" .
+    - docker tag "${CI_REGISTRY_IMAGE}:latest" "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
+    - docker push "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
+  only:
+    - master
+
+k8s-deploy:
+  image: cnych/kubectl
+  stage: k8s-deploy
+  environment:
+    name: live
+    url: https://live-gitlab-my-nginx.linjb.com
+  only:
+    - master
+  script:
+    - kubectl version
+    - cd manifests/
+    - sed -i "s/__CI_ENVIRONMENT_SLUG__/${CI_ENVIRONMENT_SLUG}/" deployment.yaml ingress.yaml service.yaml
+    - sed -i "s/__VERSION__/${CI_COMMIT_REF_NAME}/" deployment.yaml ingress.yaml service.yaml
+    - kubectl apply -f deployment.yaml
+    - kubectl apply -f service.yaml
+    - kubectl apply -f ingress.yaml
+
