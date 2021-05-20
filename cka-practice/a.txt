@@ -1,0 +1,1755 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Node",
+            "metadata": {
+                "annotations": {
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "projectcalico.org/IPv4Address": "192.168.90.110/24",
+                    "projectcalico.org/IPv4IPIPTunnelAddr": "172.17.166.128",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "creationTimestamp": "2021-04-27T09:53:38Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/os": "linux",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "node1",
+                    "kubernetes.io/os": "linux"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:projectcalico.org/IPv4Address": {},
+                                    "f:projectcalico.org/IPv4IPIPTunnelAddr": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:conditions": {
+                                    "k:{\"type\":\"NetworkUnavailable\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                }
+                            }
+                        },
+                        "manager": "calico-node",
+                        "operation": "Update",
+                        "time": "2021-04-27T10:19:23Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        },
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "time": "2021-04-29T03:39:29Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            }
+                        },
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "time": "2021-05-08T06:06:01Z"
+                    }
+                ],
+                "name": "node1",
+                "resourceVersion": "6673695",
+                "selfLink": "/api/v1/nodes/node1",
+                "uid": "3b510a82-a8fd-46a8-9ed5-35a48aac55e8"
+            },
+            "spec": {},
+            "status": {
+                "addresses": [
+                    {
+                        "address": "192.168.90.110",
+                        "type": "InternalIP"
+                    },
+                    {
+                        "address": "node1",
+                        "type": "Hostname"
+                    }
+                ],
+                "allocatable": {
+                    "cpu": "4",
+                    "ephemeral-storage": "96102859003",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16164104Ki",
+                    "pods": "220"
+                },
+                "capacity": {
+                    "cpu": "4",
+                    "ephemeral-storage": "104278276Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16266504Ki",
+                    "pods": "220"
+                },
+                "conditions": [
+                    {
+                        "lastHeartbeatTime": "2021-04-28T07:41:29Z",
+                        "lastTransitionTime": "2021-04-28T07:41:29Z",
+                        "message": "Calico is running on this node",
+                        "reason": "CalicoIsUp",
+                        "status": "False",
+                        "type": "NetworkUnavailable"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-29T03:39:29Z",
+                        "message": "kubelet has sufficient memory available",
+                        "reason": "KubeletHasSufficientMemory",
+                        "status": "False",
+                        "type": "MemoryPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-29T03:39:29Z",
+                        "message": "kubelet has no disk pressure",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "status": "False",
+                        "type": "DiskPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-29T03:39:29Z",
+                        "message": "kubelet has sufficient PID available",
+                        "reason": "KubeletHasSufficientPID",
+                        "status": "False",
+                        "type": "PIDPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-05-08T06:06:11Z",
+                        "message": "kubelet is posting ready status",
+                        "reason": "KubeletReady",
+                        "status": "True",
+                        "type": "Ready"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "images": [
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee@sha256:8e28deba1e609239e7406cfdbe45c99c6d6e2fbaa456915fc42e2952e3f88169",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 554515415
+                    },
+                    {
+                        "names": [
+                            "docker.elastic.co/elasticsearch/elasticsearch@sha256:59342c577e2b7082b819654d119f42514ddf47f0699c8b54dc1f0150250ce7aa",
+                            "docker.elastic.co/elasticsearch/elasticsearch:7.6.2"
+                        ],
+                        "sizeBytes": 441550991
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/tomcat@sha256:2a39537f6c3c53373fdd047b5b7893f29366926bbe6d4b0740ec58841755febf",
+                            "docker.io/library/tomcat:8.5"
+                        ],
+                        "sizeBytes": 242887191
+                    },
+                    {
+                        "names": [
+                            "docker.io/linjinbao66/tour@sha256:b9e8f435500639b2d1b8c6232879b7b8a914681c62c47f965a5255ce6e7cccf8",
+                            "docker.io/linjinbao66/tour:0.0.1"
+                        ],
+                        "sizeBytes": 131694565
+                    },
+                    {
+                        "names": [
+                            "docker.io/fluent/fluentd-kubernetes-daemonset@sha256:7fe512f670eda2df363c44b6c8b4a505ca35f238032a6ddf75c98b33e56b8088",
+                            "docker.io/fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch"
+                        ],
+                        "sizeBytes": 121663447
+                    },
+                    {
+                        "names": [
+                            "k8s.gcr.io/ingress-nginx/controller@sha256:1f4f402b9c14f3ae92b11ada1dfe9893a88f0faeb0b2f4b903e2c67a0c3bf0de",
+                            "k8s.gcr.io/ingress-nginx/controller:v0.41.2"
+                        ],
+                        "sizeBytes": 102372949
+                    },
+                    {
+                        "names": [
+                            "docker.io/tutum/dnsutils:latest"
+                        ],
+                        "sizeBytes": 75753598
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/minio@sha256:bd11edda91f30cd94060c80e6d496ca406d46d2de356f59904f721cdfd0b1d63",
+                            "docker.io/minio/minio:RELEASE.2021-02-14T04-01-33Z"
+                        ],
+                        "sizeBytes": 68026936
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/chartmuseum-photon@sha256:121746d9adc36c3e4435d165a3799e1cc55a6ee82b30a482723ab76024cf7a1f",
+                            "docker.io/goharbor/chartmuseum-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 67770956
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/prometheus@sha256:38d40a760569b1c5aec4a36e8a7f11e86299e9191b9233672a5d41296d8fa74e",
+                            "quay.io/prometheus/prometheus:v2.26.0"
+                        ],
+                        "sizeBytes": 66807614
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/grafana@sha256:ba39bf5131dcc0464134a3ff0e26e8c6380415249fa725e5f619176601255172",
+                            "docker.io/grafana/grafana:7.5.4"
+                        ],
+                        "sizeBytes": 65265230
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/promtail@sha256:4443d937395b25fa6591ade8ed06dae4f520bfe4d281b5686369b704be81b571",
+                            "docker.io/grafana/promtail:2.1.0"
+                        ],
+                        "sizeBytes": 63765563
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/node@sha256:dea9d024b9df20e1d4aa0624ff3a89b7f5e04116b7dafd9556c059ac3353282b",
+                            "docker.io/calico/node:v3.18.1"
+                        ],
+                        "sizeBytes": 60503271
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/kubectl@sha256:99931bd06b4154bc420929ea24a55a367f8aa2dd5d0629f0c376476c038cd2bd",
+                            "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.13.12"
+                        ],
+                        "sizeBytes": 59405847
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-core@sha256:d8813789bd9a9dfc9bc8c439396a752a9753275b7130aad82a7e8b6cc95f5693",
+                            "docker.io/goharbor/harbor-core:v2.2.1"
+                        ],
+                        "sizeBytes": 49013916
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/cni@sha256:ed3ee0da61036fd0984442624a85ede293c71792d26072b4e813ed5460f7bbaf",
+                            "docker.io/calico/cni:v3.18.1"
+                        ],
+                        "sizeBytes": 44691165
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/notary-signer-photon@sha256:42cd8a38577be972ccb33150d815b5dc1b2abf0d3e164a2cfb60b1aef72907e1",
+                            "docker.io/goharbor/notary-signer-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 40943834
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/nginx:1.7.9"
+                        ],
+                        "sizeBytes": 39947836
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry@sha256:562456144a91d277864e6ab56bd12bdc5ea87879d6e125102f648c12eed8ab02",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.3.0-gitlab"
+                        ],
+                        "sizeBytes": 39611182
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/redis-photon@sha256:d7b4900ab786946e9857d45133639880d88b6f06b39e2e522e0185873ec7c500",
+                            "docker.io/goharbor/redis-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 27403777
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/alertmanager@sha256:24a5204b418e8fa0214cfb628486749003b039c279c56b5bddb5b10cd100d926",
+                            "quay.io/prometheus/alertmanager:v0.21.0"
+                        ],
+                        "sizeBytes": 27097956
+                    },
+                    {
+                        "names": [
+                            "docker.io/directxman12/k8s-prometheus-adapter@sha256:b874cc7a126077cc062d698953450b8c459140dad53d65d6903c9f9489cb1afe",
+                            "docker.io/directxman12/k8s-prometheus-adapter:v0.8.4"
+                        ],
+                        "sizeBytes": 25253648
+                    },
+                    {
+                        "names": [
+                            "quay.io/brancz/kube-rbac-proxy@sha256:05e15e1164fd7ac85f5702b3f87ef548f4e00de3a79e6c4a6a34c92035497a9a",
+                            "quay.io/brancz/kube-rbac-proxy:v0.8.0"
+                        ],
+                        "sizeBytes": 19991394
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/loki@sha256:b393f409fa9ada5327e7fb5ec8ac90300ae498560417f08fec2f10e14a89aa7c",
+                            "docker.io/grafana/loki:2.1.0"
+                        ],
+                        "sizeBytes": 19873865
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/nginx-photon@sha256:947b4eaabd4fd86b270bbad1e95a0e2051203cf46248ec4d7a30300e0ec57c95",
+                            "docker.io/goharbor/nginx-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 16908127
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/node-exporter@sha256:22fbde17ab647ddf89841e5e464464eece111402b7d599882c2a3393bc0d2810",
+                            "quay.io/prometheus/node-exporter:v1.1.2"
+                        ],
+                        "sizeBytes": 12699611
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/blackbox-exporter@sha256:1ffc3f109eb39c89df16cdaf359cb9127d4ca2b5313724e939c2c8769aff8176",
+                            "quay.io/prometheus/blackbox-exporter:v0.18.0"
+                        ],
+                        "sizeBytes": 10187252
+                    },
+                    {
+                        "names": [
+                            "k8s.gcr.io/kube-state-metrics/kube-state-metrics@sha256:eb2f41024a583e8795213726099c6f9432f2d64ab3754cc8ab8d00bdbc328910",
+                            "k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0"
+                        ],
+                        "sizeBytes": 9982606
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/pod2daemon-flexvol@sha256:78022f886d60004084284c99d294f42f6bc7574fc1a7a2c7eafa8936c3a0bb7b",
+                            "docker.io/calico/pod2daemon-flexvol:v3.18.1"
+                        ],
+                        "sizeBytes": 9327971
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/mc@sha256:88890e23ba30a056293bf4e83563d18ac51b4102e784c939db541bcca53c05ac",
+                            "docker.io/minio/mc:RELEASE.2018-07-13T00-53-22Z"
+                        ],
+                        "sizeBytes": 6707183
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus-operator/prometheus-config-reloader@sha256:0029252e7cf8cf38fc58795928d4e1c746b9e609432a2ee5417a9cab4633b864",
+                            "quay.io/prometheus-operator/prometheus-config-reloader:v0.47.0"
+                        ],
+                        "sizeBytes": 4848736
+                    },
+                    {
+                        "names": [
+                            "docker.io/jimmidyson/configmap-reload@sha256:904d08e9f701d3d8178cb61651dbe8edc5d08dd5895b56bdcac9e5805ea82b52",
+                            "docker.io/jimmidyson/configmap-reload:v0.5.0"
+                        ],
+                        "sizeBytes": 4083839
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates@sha256:16bd1725d720ba6cbf224ed93b87f31267f1d11ec76777586aa83f7b16f209e8",
+                            "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"
+                        ],
+                        "sizeBytes": 3101620
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/busybox@sha256:be4684e4004560b2cd1f12148b7120b0ea69c385bcc9b12a637537a2c60f97fb",
+                            "docker.io/library/busybox:latest"
+                        ],
+                        "sizeBytes": 770708
+                    }
+                ],
+                "nodeInfo": {
+                    "architecture": "amd64",
+                    "bootID": "d20f7f76-ac4e-497e-8520-349905520463",
+                    "containerRuntimeVersion": "containerd://1.4.4",
+                    "kernelVersion": "3.10.0-1160.24.1.el7.x86_64",
+                    "kubeProxyVersion": "v1.20.3",
+                    "kubeletVersion": "v1.20.3",
+                    "machineID": "6a9fe4ec53924fdd8f649c2e6b5e9a38",
+                    "operatingSystem": "linux",
+                    "osImage": "CentOS Linux 7 (Core)",
+                    "systemUUID": "581B3942-5F9F-D7E1-E407-46D2BEBAEBC2"
+                }
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Node",
+            "metadata": {
+                "annotations": {
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "projectcalico.org/IPv4Address": "192.168.90.153/24",
+                    "projectcalico.org/IPv4IPIPTunnelAddr": "172.17.104.0",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "creationTimestamp": "2021-04-27T09:53:38Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/os": "linux",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "node2",
+                    "kubernetes.io/os": "linux"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:projectcalico.org/IPv4Address": {},
+                                    "f:projectcalico.org/IPv4IPIPTunnelAddr": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:conditions": {
+                                    "k:{\"type\":\"NetworkUnavailable\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                }
+                            }
+                        },
+                        "manager": "calico-node",
+                        "operation": "Update",
+                        "time": "2021-04-28T07:31:37Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            }
+                        },
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "time": "2021-04-29T01:37:35Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        },
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "time": "2021-04-29T01:39:01Z"
+                    }
+                ],
+                "name": "node2",
+                "resourceVersion": "6673730",
+                "selfLink": "/api/v1/nodes/node2",
+                "uid": "be42849e-9ba4-4dad-9d49-60f24f3a7490"
+            },
+            "spec": {},
+            "status": {
+                "addresses": [
+                    {
+                        "address": "192.168.90.153",
+                        "type": "InternalIP"
+                    },
+                    {
+                        "address": "node2",
+                        "type": "Hostname"
+                    }
+                ],
+                "allocatable": {
+                    "cpu": "8",
+                    "ephemeral-storage": "96102859003",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16163580Ki",
+                    "pods": "220"
+                },
+                "capacity": {
+                    "cpu": "8",
+                    "ephemeral-storage": "104278276Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16265980Ki",
+                    "pods": "220"
+                },
+                "conditions": [
+                    {
+                        "lastHeartbeatTime": "2021-04-28T07:41:51Z",
+                        "lastTransitionTime": "2021-04-28T07:41:51Z",
+                        "message": "Calico is running on this node",
+                        "reason": "CalicoIsUp",
+                        "status": "False",
+                        "type": "NetworkUnavailable"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:13Z",
+                        "lastTransitionTime": "2021-04-29T01:39:01Z",
+                        "message": "kubelet has sufficient memory available",
+                        "reason": "KubeletHasSufficientMemory",
+                        "status": "False",
+                        "type": "MemoryPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:13Z",
+                        "lastTransitionTime": "2021-04-29T01:39:01Z",
+                        "message": "kubelet has no disk pressure",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "status": "False",
+                        "type": "DiskPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:13Z",
+                        "lastTransitionTime": "2021-04-29T01:39:01Z",
+                        "message": "kubelet has sufficient PID available",
+                        "reason": "KubeletHasSufficientPID",
+                        "status": "False",
+                        "type": "PIDPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:13Z",
+                        "lastTransitionTime": "2021-04-29T01:39:01Z",
+                        "message": "kubelet is posting ready status",
+                        "reason": "KubeletReady",
+                        "status": "True",
+                        "type": "Ready"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "images": [
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitaly@sha256:a8b96ceeacfce67c184388d97ae1c2729a1db2d5a9b7c998c264cc6b21b85b3d",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitaly:v13.8.2"
+                        ],
+                        "sizeBytes": 864817506
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitaly@sha256:760fa03d930f35b9fc11e629a1e60fc6863943ebfc8fc19b5d8dd84cdce22d66",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitaly:v13.11.1"
+                        ],
+                        "sizeBytes": 854322166
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee@sha256:126c37d85233895d3b33c3264a012c777994509e5aba4d60bd14baa747ec54b6",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 599418424
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee@sha256:2028713766b36224423cddd274db426d8ca67e815ea3c9ce1caddfa146dc5e89",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 594699711
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee@sha256:fecec643f1f785beb842aea0c9c0c6d262cbb0dc4f794fcd4b717915adee8bc8",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 579465335
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee@sha256:8e28deba1e609239e7406cfdbe45c99c6d6e2fbaa456915fc42e2952e3f88169",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 554515415
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee@sha256:547a30320826975f25d6ba59227a4a08027287bfe5b8ebba7dce30e2071d6bd7",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 549146370
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee@sha256:76a06bf2163eb81daad4b3834aaf9686460fa63c722abf4dfc3d6652a870db5e",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v13.11.1"
+                        ],
+                        "sizeBytes": 549094293
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee@sha256:799b2f9a3dbbd3e3950ab981dd34c22188851ae5ff3a0f243df558b2e5e2c52c",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 533892846
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell@sha256:d50e59535ee906f2be3c3b8506bc0f83610a24279ed2ae07b8cf1df12f82bfb2",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v13.17.0"
+                        ],
+                        "sizeBytes": 473867542
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell@sha256:247cc3f904082dd6409014fa7af1f0c418c3c88c86e5ff30db6f4b73dca212d3",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v13.15.0"
+                        ],
+                        "sizeBytes": 436203901
+                    },
+                    {
+                        "names": [
+                            "docker.elastic.co/kibana/kibana@sha256:e8f3743e404462709663422056db2d5076a7a6bd6024f64aea1599b3014c63be",
+                            "docker.elastic.co/kibana/kibana:7.6.2"
+                        ],
+                        "sizeBytes": 409455158
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee@sha256:b0d9eaa842c0d91f5850865317d96d58cc4a98f8214cf386057ca3782b66dd3f",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 325228196
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee@sha256:7e6b8a903af47c389a33c25bd53817ba01abb3bfa7a07a87c75112671cd86190",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 279144505
+                    },
+                    {
+                        "names": [
+                            "docker.io/linjinbao66/tour@sha256:b9e8f435500639b2d1b8c6232879b7b8a914681c62c47f965a5255ce6e7cccf8",
+                            "docker.io/linjinbao66/tour:0.0.1"
+                        ],
+                        "sizeBytes": 131694565
+                    },
+                    {
+                        "names": [
+                            "docker.io/fluent/fluentd-kubernetes-daemonset@sha256:7fe512f670eda2df363c44b6c8b4a505ca35f238032a6ddf75c98b33e56b8088",
+                            "docker.io/fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch"
+                        ],
+                        "sizeBytes": 121663447
+                    },
+                    {
+                        "names": [
+                            "k8s.gcr.io/ingress-nginx/controller@sha256:1f4f402b9c14f3ae92b11ada1dfe9893a88f0faeb0b2f4b903e2c67a0c3bf0de"
+                        ],
+                        "sizeBytes": 102372949
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter@sha256:748acf61ffd08645aef0f5c4a8a11d04bd6fdb2591a9ada0f7f858608c1aceda",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:10.2.0"
+                        ],
+                        "sizeBytes": 97077025
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter@sha256:abea4a3affb4a176845beb61a8e59f69434c4198545ab54457a8c49da84ec597",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:8.0.0"
+                        ],
+                        "sizeBytes": 93577167
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/postgresql@sha256:facafe23d1c9cff9a727f01634e5c247821e1c811bed3bcb40e936cf4be8f265",
+                            "docker.io/bitnami/postgresql:11.9.0"
+                        ],
+                        "sizeBytes": 86952081
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/console@sha256:cf7bcab971f72fd3f99e09e475a85cc7a2ff73a27947f01ae4e36946c676a438",
+                            "docker.io/minio/console:v0.6.8"
+                        ],
+                        "sizeBytes": 86641338
+                    },
+                    {
+                        "names": [
+                            "docker.io/gitlab/gitlab-runner@sha256:d01c7fdfe5b85d55b66bb0ba01d1e52ac31747811b522f05dac2d514219fbd9f",
+                            "docker.io/gitlab/gitlab-runner:alpine-v13.11.0"
+                        ],
+                        "sizeBytes": 83951624
+                    },
+                    {
+                        "names": [
+                            "docker.io/gitlab/gitlab-runner@sha256:80adab33b73f3bcb1a59fc37641449345d2bbb172f97607bb0f8ccb8175cf5ab",
+                            "docker.io/gitlab/gitlab-runner:alpine-v13.8.0"
+                        ],
+                        "sizeBytes": 80849914
+                    },
+                    {
+                        "names": [
+                            "docker.io/tutum/dnsutils:latest"
+                        ],
+                        "sizeBytes": 75753598
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/minio@sha256:bd11edda91f30cd94060c80e6d496ca406d46d2de356f59904f721cdfd0b1d63",
+                            "docker.io/minio/minio:RELEASE.2021-02-14T04-01-33Z"
+                        ],
+                        "sizeBytes": 68026936
+                    },
+                    {
+                        "names": [
+                            "docker.io/kubernetesui/dashboard@sha256:148991563e374c83b75e8c51bca75f512d4f006ddc791e96a91f1c7420b60bd9",
+                            "docker.io/kubernetesui/dashboard:v2.2.0"
+                        ],
+                        "sizeBytes": 67775224
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/minio@sha256:0d7eed8a16cc37161974b9515ac3eb83c2c99837a80e2352dfcde6d86d207e32",
+                            "docker.io/minio/minio:RELEASE.2021-04-06T23-11-00Z"
+                        ],
+                        "sizeBytes": 66941516
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/prometheus@sha256:38d40a760569b1c5aec4a36e8a7f11e86299e9191b9233672a5d41296d8fa74e",
+                            "quay.io/prometheus/prometheus:v2.26.0"
+                        ],
+                        "sizeBytes": 66807614
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-jobservice@sha256:8b617874fe5ac569172a8cb271763dd24333007bf5e040e6a3ae355ae23f7109",
+                            "docker.io/goharbor/harbor-jobservice:v2.2.1"
+                        ],
+                        "sizeBytes": 66254404
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/operator@sha256:0cbfee2437c988997fb12fcfdde075cbc46ff81f7a58cd8ae3fdbd529dd492a6",
+                            "docker.io/minio/operator:v4.0.9"
+                        ],
+                        "sizeBytes": 64218135
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/promtail@sha256:4443d937395b25fa6591ade8ed06dae4f520bfe4d281b5686369b704be81b571",
+                            "docker.io/grafana/promtail:2.1.0"
+                        ],
+                        "sizeBytes": 63765563
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/node@sha256:dea9d024b9df20e1d4aa0624ff3a89b7f5e04116b7dafd9556c059ac3353282b",
+                            "docker.io/calico/node:v3.18.1"
+                        ],
+                        "sizeBytes": 60503271
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/kubectl@sha256:99931bd06b4154bc420929ea24a55a367f8aa2dd5d0629f0c376476c038cd2bd",
+                            "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.13.12"
+                        ],
+                        "sizeBytes": 59405847
+                    },
+                    {
+                        "names": [
+                            "docker.io/prom/prometheus@sha256:914525123cf76a15a6aaeac069fcb445ce8fb125113d1bc5b15854bc1e8b6353",
+                            "docker.io/prom/prometheus:v2.15.2"
+                        ],
+                        "sizeBytes": 54031380
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/nginx@sha256:75a55d33ecc73c2a242450a9f1cc858499d468f077ea942867e662c247b5e412",
+                            "docker.io/library/nginx:latest"
+                        ],
+                        "sizeBytes": 53730106
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-registryctl@sha256:32fc649e64459ce0db75f963b35d21bea680015a141edd1b6cf5bad4f8fb6ab9",
+                            "docker.io/goharbor/harbor-registryctl:v2.2.1"
+                        ],
+                        "sizeBytes": 51997220
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/cni@sha256:ed3ee0da61036fd0984442624a85ede293c71792d26072b4e813ed5460f7bbaf",
+                            "docker.io/calico/cni:v3.18.1"
+                        ],
+                        "sizeBytes": 44691165
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis@sha256:2a2a4ec1b166ba8a7da095675f5bc52825115948e763306b6280af396c15500f",
+                            "docker.io/bitnami/redis:5.0.7-debian-9-r50"
+                        ],
+                        "sizeBytes": 43200182
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis@sha256:0617d340ee21c60f2ee3075dd0a014741f5b54b02e922a12d935c5454103e5f5",
+                            "docker.io/bitnami/redis:6.0.9-debian-10-r0"
+                        ],
+                        "sizeBytes": 42334211
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/notary-server-photon@sha256:1bea69d0664c76d1e8123593affbdfa23d833882eaf01d165ab3306e03766971",
+                            "docker.io/goharbor/notary-server-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 41986356
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/postgres-exporter@sha256:d5a45468d8f586c8cd6e052c5d7840f53e61b528a64484b9f6b6a37ec590c156",
+                            "docker.io/bitnami/postgres-exporter:0.8.0-debian-10-r99"
+                        ],
+                        "sizeBytes": 41107064
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry@sha256:2cae06f7c933eea01d8eaa4e2452dbc1f8faf742b697828cc8af6001f5a6c0ec",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.3.0-gitlab"
+                        ],
+                        "sizeBytes": 39611193
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry@sha256:4b106dd49b2bf03c9226c689ac8abe5a77c0843136d3d60e3bb0cdacdcaff432",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v2.13.1-gitlab"
+                        ],
+                        "sizeBytes": 39404591
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis-exporter@sha256:2a0fe31cc1a8e2608d973b53f1e235de3a56058ff8ed9311da45b77b207f83b7",
+                            "docker.io/bitnami/redis-exporter:1.3.5-debian-9-r23"
+                        ],
+                        "sizeBytes": 38918542
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis-exporter@sha256:c7250bf30ecba208e28e234cd3baa46930e650239ebb2b780edd25ea352fdfa1",
+                            "docker.io/bitnami/redis-exporter:1.12.1-debian-10-r11"
+                        ],
+                        "sizeBytes": 38387410
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/registry-photon@sha256:0ac1c3543c49bd7e12b01ea8cfb120f83b9f2c94e7ce5a7d1afaabbbc92befae",
+                            "docker.io/goharbor/registry-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 29581455
+                    },
+                    {
+                        "names": [
+                            "docker.io/gitlab/gitlab-runner-helper@sha256:20ff486a25738d42d2bca770092d2c4b1ae28881de3b599877ab954d3654a08a",
+                            "docker.io/gitlab/gitlab-runner-helper:x86_64-7f7a4bb0"
+                        ],
+                        "sizeBytes": 27214867
+                    },
+                    {
+                        "names": [
+                            "quay.io/prometheus/alertmanager@sha256:24a5204b418e8fa0214cfb628486749003b039c279c56b5bddb5b10cd100d926",
+                            "quay.io/prometheus/alertmanager:v0.21.0"
+                        ],
+                        "sizeBytes": 27097956
+                    },
+                    {
+                        "names": [
+                            "k8s.gcr.io/metrics-server/metrics-server@sha256:eb6b6153494087bde59ceb14e68280f1fbdd17cfff2efc3a68e30a1adfa8807d",
+                            "k8s.gcr.io/metrics-server/metrics-server:v0.4.3"
+                        ],
+                        "sizeBytes": 25196755
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/kube-controllers@sha256:bd19b85801762a1634e6b5c569e7c8fd528be352b31777ae047b99ed98b7da7f",
+                            "docker.io/calico/kube-controllers:v3.18.1"
+                        ],
+                        "sizeBytes": 22596861
+                    }
+                ],
+                "nodeInfo": {
+                    "architecture": "amd64",
+                    "bootID": "373d5fe2-9689-4e8c-8446-ce0521699303",
+                    "containerRuntimeVersion": "containerd://1.4.4",
+                    "kernelVersion": "3.10.0-1062.el7.x86_64",
+                    "kubeProxyVersion": "v1.20.3",
+                    "kubeletVersion": "v1.20.3",
+                    "machineID": "9ebccefbb1f34045a5cb51011f6ec762",
+                    "operatingSystem": "linux",
+                    "osImage": "CentOS Linux 7 (Core)",
+                    "systemUUID": "EF4A3942-FB58-5A3F-C406-F449807CC06D"
+                }
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Node",
+            "metadata": {
+                "annotations": {
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "projectcalico.org/IPv4Address": "192.168.90.154/24",
+                    "projectcalico.org/IPv4IPIPTunnelAddr": "172.17.135.0",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "creationTimestamp": "2021-04-27T09:53:38Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/os": "linux",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "node3",
+                    "kubernetes.io/os": "linux"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        },
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "time": "2021-04-28T07:20:21Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:projectcalico.org/IPv4Address": {},
+                                    "f:projectcalico.org/IPv4IPIPTunnelAddr": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:conditions": {
+                                    "k:{\"type\":\"NetworkUnavailable\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                }
+                            }
+                        },
+                        "manager": "calico-node",
+                        "operation": "Update",
+                        "time": "2021-04-28T07:31:37Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            }
+                        },
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "time": "2021-04-28T09:03:20Z"
+                    }
+                ],
+                "name": "node3",
+                "resourceVersion": "6673696",
+                "selfLink": "/api/v1/nodes/node3",
+                "uid": "75770600-d7cc-4bf9-9892-84f654aa8cb1"
+            },
+            "spec": {},
+            "status": {
+                "addresses": [
+                    {
+                        "address": "192.168.90.154",
+                        "type": "InternalIP"
+                    },
+                    {
+                        "address": "node3",
+                        "type": "Hostname"
+                    }
+                ],
+                "allocatable": {
+                    "cpu": "8",
+                    "ephemeral-storage": "96102859003",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16163580Ki",
+                    "pods": "220"
+                },
+                "capacity": {
+                    "cpu": "8",
+                    "ephemeral-storage": "104278276Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "16265980Ki",
+                    "pods": "220"
+                },
+                "conditions": [
+                    {
+                        "lastHeartbeatTime": "2021-04-28T07:41:42Z",
+                        "lastTransitionTime": "2021-04-28T07:41:42Z",
+                        "message": "Calico is running on this node",
+                        "reason": "CalicoIsUp",
+                        "status": "False",
+                        "type": "NetworkUnavailable"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-28T07:20:21Z",
+                        "message": "kubelet has sufficient memory available",
+                        "reason": "KubeletHasSufficientMemory",
+                        "status": "False",
+                        "type": "MemoryPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-28T07:20:21Z",
+                        "message": "kubelet has no disk pressure",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "status": "False",
+                        "type": "DiskPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-28T07:20:21Z",
+                        "message": "kubelet has sufficient PID available",
+                        "reason": "KubeletHasSufficientPID",
+                        "status": "False",
+                        "type": "PIDPressure"
+                    },
+                    {
+                        "lastHeartbeatTime": "2021-05-20T06:31:03Z",
+                        "lastTransitionTime": "2021-04-28T09:03:30Z",
+                        "message": "kubelet is posting ready status",
+                        "reason": "KubeletReady",
+                        "status": "True",
+                        "type": "Ready"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "images": [
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitaly@sha256:589ac811868852ffa681f45b467c0184f63cb034b1a75c3471ddd6a31c08f210",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitaly:v13.11.2"
+                        ],
+                        "sizeBytes": 854371947
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee@sha256:2028713766b36224423cddd274db426d8ca67e815ea3c9ce1caddfa146dc5e89",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 594699711
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee@sha256:fecec643f1f785beb842aea0c9c0c6d262cbb0dc4f794fcd4b717915adee8bc8",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 579465335
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee@sha256:8e28deba1e609239e7406cfdbe45c99c6d6e2fbaa456915fc42e2952e3f88169",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 554515415
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee@sha256:51a7bc89ab18b64c0ae9352e2a03fbde4e8bd35ebb635d278323b11e0e5a6828",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-task-runner-ee:v13.11.1"
+                        ],
+                        "sizeBytes": 554460844
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee@sha256:547a30320826975f25d6ba59227a4a08027287bfe5b8ebba7dce30e2071d6bd7",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 549146370
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee@sha256:799b2f9a3dbbd3e3950ab981dd34c22188851ae5ff3a0f243df558b2e5e2c52c",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 533892846
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee@sha256:52147b62c046d5ce17b7f6cb520374c0d4034846e7c3869dfefc406df1dec536",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v13.11.1"
+                        ],
+                        "sizeBytes": 533859094
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell@sha256:d50e59535ee906f2be3c3b8506bc0f83610a24279ed2ae07b8cf1df12f82bfb2",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v13.17.0"
+                        ],
+                        "sizeBytes": 473867542
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee@sha256:b0d9eaa842c0d91f5850865317d96d58cc4a98f8214cf386057ca3782b66dd3f",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v13.8.2"
+                        ],
+                        "sizeBytes": 325228196
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/golang@sha256:1eede71a2d2c1871896f4a0d349d6c74bb282450378d5980a3df85b860bd65b2",
+                            "docker.io/library/golang:1.10.3-stretch"
+                        ],
+                        "sizeBytes": 300538880
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee@sha256:7e6b8a903af47c389a33c25bd53817ba01abb3bfa7a07a87c75112671cd86190",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v13.11.2"
+                        ],
+                        "sizeBytes": 279144505
+                    },
+                    {
+                        "names": [
+                            "docker.io/fluent/fluentd-kubernetes-daemonset@sha256:7fe512f670eda2df363c44b6c8b4a505ca35f238032a6ddf75c98b33e56b8088",
+                            "docker.io/fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch"
+                        ],
+                        "sizeBytes": 121663447
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-db@sha256:376337a33efe5beda56c8024937f3cc5a7eda51ac50ff4fffecac0e72f910fd1",
+                            "docker.io/goharbor/harbor-db:v2.2.1"
+                        ],
+                        "sizeBytes": 106321258
+                    },
+                    {
+                        "names": [
+                            "k8s.gcr.io/ingress-nginx/controller@sha256:1f4f402b9c14f3ae92b11ada1dfe9893a88f0faeb0b2f4b903e2c67a0c3bf0de",
+                            "k8s.gcr.io/ingress-nginx/controller:v0.41.2"
+                        ],
+                        "sizeBytes": 102372949
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter@sha256:31e4271f26c00dd65138e3567ca5391c917c0940ca3139dd6e0f1404aa655871",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:10.2.0"
+                        ],
+                        "sizeBytes": 97077127
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter@sha256:abea4a3affb4a176845beb61a8e59f69434c4198545ab54457a8c49da84ec597",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:8.0.0"
+                        ],
+                        "sizeBytes": 93577167
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/postgresql@sha256:facafe23d1c9cff9a727f01634e5c247821e1c811bed3bcb40e936cf4be8f265",
+                            "docker.io/bitnami/postgresql:11.9.0"
+                        ],
+                        "sizeBytes": 86952081
+                    },
+                    {
+                        "names": [
+                            "docker.io/gitlab/gitlab-runner@sha256:d01c7fdfe5b85d55b66bb0ba01d1e52ac31747811b522f05dac2d514219fbd9f",
+                            "docker.io/gitlab/gitlab-runner:alpine-v13.11.0"
+                        ],
+                        "sizeBytes": 83951624
+                    },
+                    {
+                        "names": [
+                            "docker.io/gitlab/gitlab-runner@sha256:80adab33b73f3bcb1a59fc37641449345d2bbb172f97607bb0f8ccb8175cf5ab",
+                            "docker.io/gitlab/gitlab-runner:alpine-v13.8.0"
+                        ],
+                        "sizeBytes": 80849914
+                    },
+                    {
+                        "names": [
+                            "docker.io/tutum/dnsutils:latest"
+                        ],
+                        "sizeBytes": 75753598
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/docker@sha256:674f1f40ff7c8ac14f5d8b6b28d8fb1f182647ff75304d018003f1e21a0d8771",
+                            "docker.io/library/docker:19.03.12-dind"
+                        ],
+                        "sizeBytes": 71988550
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/minio@sha256:bd11edda91f30cd94060c80e6d496ca406d46d2de356f59904f721cdfd0b1d63",
+                            "docker.io/minio/minio:RELEASE.2021-02-14T04-01-33Z"
+                        ],
+                        "sizeBytes": 68026936
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/chartmuseum-photon@sha256:121746d9adc36c3e4435d165a3799e1cc55a6ee82b30a482723ab76024cf7a1f",
+                            "docker.io/goharbor/chartmuseum-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 67770956
+                    },
+                    {
+                        "names": [
+                            "docker.io/minio/minio@sha256:0d7eed8a16cc37161974b9515ac3eb83c2c99837a80e2352dfcde6d86d207e32",
+                            "docker.io/minio/minio:RELEASE.2021-04-06T23-11-00Z"
+                        ],
+                        "sizeBytes": 66941516
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-jobservice@sha256:8b617874fe5ac569172a8cb271763dd24333007bf5e040e6a3ae355ae23f7109",
+                            "docker.io/goharbor/harbor-jobservice:v2.2.1"
+                        ],
+                        "sizeBytes": 66254404
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/docker@sha256:d41efe7ad0df5a709cfd4e627c7e45104f39bbc08b1b40d7fb718c562b3ce135",
+                            "docker.io/library/docker:19.03.12"
+                        ],
+                        "sizeBytes": 66022092
+                    },
+                    {
+                        "names": [
+                            "docker.io/grafana/promtail@sha256:4443d937395b25fa6591ade8ed06dae4f520bfe4d281b5686369b704be81b571",
+                            "docker.io/grafana/promtail:2.1.0"
+                        ],
+                        "sizeBytes": 63765563
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/node@sha256:dea9d024b9df20e1d4aa0624ff3a89b7f5e04116b7dafd9556c059ac3353282b",
+                            "docker.io/calico/node:v3.18.1"
+                        ],
+                        "sizeBytes": 60503271
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/kubectl@sha256:99931bd06b4154bc420929ea24a55a367f8aa2dd5d0629f0c376476c038cd2bd",
+                            "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.13.12"
+                        ],
+                        "sizeBytes": 59405847
+                    },
+                    {
+                        "names": [
+                            "docker.io/prom/prometheus@sha256:914525123cf76a15a6aaeac069fcb445ce8fb125113d1bc5b15854bc1e8b6353",
+                            "docker.io/prom/prometheus:v2.15.2"
+                        ],
+                        "sizeBytes": 54031380
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/nginx@sha256:75a55d33ecc73c2a242450a9f1cc858499d468f077ea942867e662c247b5e412",
+                            "docker.io/library/nginx:latest"
+                        ],
+                        "sizeBytes": 53730106
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-registryctl@sha256:32fc649e64459ce0db75f963b35d21bea680015a141edd1b6cf5bad4f8fb6ab9",
+                            "docker.io/goharbor/harbor-registryctl:v2.2.1"
+                        ],
+                        "sizeBytes": 51997220
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/harbor-core@sha256:d8813789bd9a9dfc9bc8c439396a752a9753275b7130aad82a7e8b6cc95f5693",
+                            "docker.io/goharbor/harbor-core:v2.2.1"
+                        ],
+                        "sizeBytes": 49013916
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/trivy-adapter-photon@sha256:5e044e3282baeb99734ee4c4f6086c58a7b2e0c3b78dcc92f0a6ca0b68d9e626",
+                            "docker.io/goharbor/trivy-adapter-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 47714255
+                    },
+                    {
+                        "names": [
+                            "docker.io/calico/cni@sha256:ed3ee0da61036fd0984442624a85ede293c71792d26072b4e813ed5460f7bbaf",
+                            "docker.io/calico/cni:v3.18.1"
+                        ],
+                        "sizeBytes": 44691165
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis@sha256:2a2a4ec1b166ba8a7da095675f5bc52825115948e763306b6280af396c15500f",
+                            "docker.io/bitnami/redis:5.0.7-debian-9-r50"
+                        ],
+                        "sizeBytes": 43200182
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis@sha256:0617d340ee21c60f2ee3075dd0a014741f5b54b02e922a12d935c5454103e5f5",
+                            "docker.io/bitnami/redis:6.0.9-debian-10-r0"
+                        ],
+                        "sizeBytes": 42334211
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/notary-server-photon@sha256:1bea69d0664c76d1e8123593affbdfa23d833882eaf01d165ab3306e03766971",
+                            "docker.io/goharbor/notary-server-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 41986356
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/postgres-exporter@sha256:d5a45468d8f586c8cd6e052c5d7840f53e61b528a64484b9f6b6a37ec590c156",
+                            "docker.io/bitnami/postgres-exporter:0.8.0-debian-10-r99"
+                        ],
+                        "sizeBytes": 41107064
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/notary-signer-photon@sha256:42cd8a38577be972ccb33150d815b5dc1b2abf0d3e164a2cfb60b1aef72907e1",
+                            "docker.io/goharbor/notary-signer-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 40943834
+                    },
+                    {
+                        "names": [
+                            "docker.io/library/nginx:1.7.9"
+                        ],
+                        "sizeBytes": 39947836
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry@sha256:2cae06f7c933eea01d8eaa4e2452dbc1f8faf742b697828cc8af6001f5a6c0ec",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.3.0-gitlab"
+                        ],
+                        "sizeBytes": 39611193
+                    },
+                    {
+                        "names": [
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry@sha256:4b106dd49b2bf03c9226c689ac8abe5a77c0843136d3d60e3bb0cdacdcaff432",
+                            "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v2.13.1-gitlab"
+                        ],
+                        "sizeBytes": 39404591
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis-exporter@sha256:2a0fe31cc1a8e2608d973b53f1e235de3a56058ff8ed9311da45b77b207f83b7",
+                            "docker.io/bitnami/redis-exporter:1.3.5-debian-9-r23"
+                        ],
+                        "sizeBytes": 38918542
+                    },
+                    {
+                        "names": [
+                            "docker.io/bitnami/redis-exporter@sha256:c7250bf30ecba208e28e234cd3baa46930e650239ebb2b780edd25ea352fdfa1",
+                            "docker.io/bitnami/redis-exporter:1.12.1-debian-10-r11"
+                        ],
+                        "sizeBytes": 38387410
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/registry-photon@sha256:0ac1c3543c49bd7e12b01ea8cfb120f83b9f2c94e7ce5a7d1afaabbbc92befae",
+                            "docker.io/goharbor/registry-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 29581455
+                    },
+                    {
+                        "names": [
+                            "docker.io/goharbor/redis-photon@sha256:d7b4900ab786946e9857d45133639880d88b6f06b39e2e522e0185873ec7c500",
+                            "docker.io/goharbor/redis-photon:v2.2.1"
+                        ],
+                        "sizeBytes": 27403777
+                    },
+                    {
+                        "names": [
+                            "docker.io/gitlab/gitlab-runner-helper@sha256:20ff486a25738d42d2bca770092d2c4b1ae28881de3b599877ab954d3654a08a",
+                            "docker.io/gitlab/gitlab-runner-helper:x86_64-7f7a4bb0"
+                        ],
+                        "sizeBytes": 27214867
+                    },
+                    {
+                        "names": [
+                            "k8s.gcr.io/metrics-server/metrics-server@sha256:eb6b6153494087bde59ceb14e68280f1fbdd17cfff2efc3a68e30a1adfa8807d",
+                            "k8s.gcr.io/metrics-server/metrics-server:v0.4.3"
+                        ],
+                        "sizeBytes": 25196755
+                    }
+                ],
+                "nodeInfo": {
+                    "architecture": "amd64",
+                    "bootID": "333c15b0-7b0b-4d38-946f-c69b3351b662",
+                    "containerRuntimeVersion": "containerd://1.4.4",
+                    "kernelVersion": "3.10.0-1062.el7.x86_64",
+                    "kubeProxyVersion": "v1.20.3",
+                    "kubeletVersion": "v1.20.3",
+                    "machineID": "b896e0b080e74809995f70cc2ca09ce5",
+                    "operatingSystem": "linux",
+                    "osImage": "CentOS Linux 7 (Core)",
+                    "systemUUID": "4A553942-D964-D889-97F4-A61EA83638AB"
+                }
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

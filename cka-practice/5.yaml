@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: apline
+    image: nginx
+    command: ['sh', '-c', 'if [ ! -e "/opt/myfile" ];then exit; fi;']
+###增加init Container####
+  initContainers:
+  - name: busybox
+    image: busybox
+    command: ['sh', '-c', 'touch /opt/myfile;']
