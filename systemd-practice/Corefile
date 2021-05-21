@@ -1,0 +1,13 @@
+.:53 {
+  bind 127.0.0.1
+  hosts { 
+    ttl 60
+    reload 1m
+    fallthrough
+  }
+  forward . /etc/resolv.conf
+  cache 120
+  reload 6s
+  log
+  errors
+}
