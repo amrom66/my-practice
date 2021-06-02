@@ -1,0 +1,24 @@
+{{- if .Values.persistence.enabled }}
+{{- $terminal := .Values.persistence.persistentVolumeClaim.terminal -}}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: next-terminal-pvc 
+  {{- if eq .Values.persistence.resourcePolicy "keep" }}
+  annotations:
+    helm.sh/resource-policy: keep
+  {{- end }}
+spec:
+  accessModes: 
+    - {{ $terminal.accessMode }}
+  resources:
+    requests:
+      storage: {{ $terminal.size }}
+  {{- if $terminal.storageClass }}
+    {{- if eq "-" $terminal.storageClass }}
+  storageClassName: ""
+    {{- else }}
+  storageClassName: {{ $terminal.storageClass }}
+    {{- end }}
+  {{- end }}
+{{- end }}
