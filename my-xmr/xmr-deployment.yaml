@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xmr-deployment
+  namespace: linjb
+  labels:
+    app: xmr
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xmr
+  template:
+    metadata:
+      labels:
+        app: xmr
+    spec:
+      containers:
+      - name: xmr
+        image: snowdream/xmr:latest
+        resources:
+          limits:
+            cpu: "2"
+          requests:
+            cpu: "2"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /etc/xmrig/
+          readOnly: true
+          name: config 
+      volumes:
+      - name: config
+        configMap:
+          name: xmr-config
+          items:
+            - key: config.json
+              path: config.json
