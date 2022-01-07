@@ -11,7 +11,7 @@ minioMc:
   tag: "RELEASE.2018-07-13T00-53-22Z"
 
 ingress:
-  enabled:
+  enabled: false
   proxyReadTimeout: 900
   proxyBodySize: "0"
   proxyBuffering: "off"
@@ -26,7 +26,7 @@ tolerations: []
 
 global:
   ingress:
-    enabled:
+    enabled: false
     annotations: {}
     tls: {}
       # secretName:
