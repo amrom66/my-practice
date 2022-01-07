@@ -44,7 +44,9 @@ Pipelines是定义于`.gitlab-ci.yml`中的不同阶段的不同任务。
 第一步：helm部署gitlab命令：
 
 ```code
-helm install gitlab gitlab/  --timeout 600s --set global.hosts.domain=linjb.com --set certmanager-issuer.email=1576654308@qq.com --set global.hosts.gitlab.https=false  --set global.hosts.https=false --set global.ingress.tls.enabled=false
+helm install gitlab gitlab/  --timeout 600s --set global.hosts.domain=linjb.com 
+--set certmanager-issuer.email=1576654308@qq.com --set global.hosts.gitlab.https=false 
+--set global.hosts.https=false --set global.ingress.tls.enabled=false
 ```
 
 第二步：在coredns中配置域名的解析为集群内地址。
